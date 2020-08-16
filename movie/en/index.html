@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Alexstrap Movie - HTML5 Bootstrap Landing Page Template">
+    <meta name="viewport" content="minimum-scale=1,initial-scale=1,width=device-width,shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="../assets/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../assets/favicons/ms-icon-144x144.png">
+    <!-- PWA primary color-->
+    <meta name="theme-color" content="#303030">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Facebook-->
+    <meta property="author" content="luxi">
+    <meta property="og:site_name" content="alexstrap.ux-maestro.com">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <!-- Twitter-->
+    <meta property="twitter:site" content="luxi.ux-maestro.com">
+    <meta property="twitter:domain" content="luxi.ux-maestro.com">
+    <meta property="twitter:creator" content="luxi">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:image:src" content="../assets/images/logo.png">
+    <meta property="og:url" content="alexstrap.ux-maestro.com/movie">
+    <meta property="og:title" content="Movie">
+    <meta property="og:description" content="Alexstrap Movie - HTML5 Bootstrap Landing Page Template">
+    <meta name="twitter:site" content="alexstrap.ux-maestro.com/movie">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="/images/movie-logo.png">
+    <meta property="og:image" content="/images/movie-logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <title>Movie - Home Page</title>
+    <!-- Styles-->
+    <link href="../../assets/css/side-right.css" rel="stylesheet">
+    <link href="../assets/css/movie-bundle.min.css" rel="stylesheet">
+    <!-- <link href="../assets/css/agency-bundle.min.css" rel="stylesheet"> -->
+</head>
+
+<body>
+    <div id="preloader" style="position: fixed; z-index: 10000; background: #fafafa; width: 100%; height: 100%"><img
+            style="opacity: 0.5; position: fixed; top: calc(50% - 50px); left: calc(50% - 50px)"
+            src="../assets/images/loading.gif" alt="loading"></div>
+    <div class="m-application theme--light transition-page" id="app">
+        <div class="loading"></div>
+        <div class="m-content passion passion-var" id="main-wrap">
+            <div>
+                <!-- float options -->
+                <div class="btn-float-opt">
+                    <button class="btn btn-icon waves-effect" id="open_palette"><i
+                            class="material-icons">palette</i></button>
+                </div>
+                <div class="sidenav-opt drawer-opt" id="slidemenu">
+                    <div class="opt-wrap">
+                        <div class="hidden-sm-up">
+                            <div class="btn-icon waves-effect" id="close_sideright"><i
+                                    class="material-icons">arrow_back</i></div>
+                        </div>
+                        <ul class="tabs">
+                            <li class="tab tab-label"><a class="active" href="#palette_options"><i
+                                        class="material-icons">palette</i>Theme</a></li>
+                        </ul>
+                        <div class="tab-item" id="palette_options">
+                            <div>
+                                <div class="theme-switched">
+                                    <div class="card paper">
+                                        <div class="row">
+                                            <div class="col-sm-6 margin-bottom">
+                                                <h6 class="title">Theme Mode</h6>
+                                                <div class="switch switch-toggle"><label class="overline">Light<input
+                                                            id="theme_switcher_side" type="checkbox"><span
+                                                            class="lever"></span>Dark</label></div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <h6 class="title">Layout Direction</h6>
+                                                <div class="switch switch-toggle"><label class="overline">LTR<input
+                                                            id="dir_switcher_side" type="checkbox"><span
+                                                            class="lever"></span>RTL<br><i class="caption">Best view in
+                                                            arabic</i></label></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="theme-color">
+                                    <div class="card paper">
+                                        <h6 class="title">Color Combination</h6>
+                                        <div class="row">
+                                            <div class="col-sm-3 col-6 my-1">
+                                                <div class="swatch waves-effect tooltipped" data-position="top"
+                                                    data-tooltip="joker" data-color="joker"><span class="primary-swatch"
+                                                        style="background: #673AB7; box-shadow: 0 0 0 6px #D1C4E9, 0 0 0 12px #311B92, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span><span
+                                                        class="secondary-swatch"
+                                                        style="background: #00BCD4; box-shadow: 0 0 0 6px #B2EBF2, 0 0 0 12px #006064, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-6 my-1">
+                                                <div class="swatch waves-effect tooltipped" data-position="top"
+                                                    data-tooltip="violeta" data-color="violeta"><span
+                                                        class="primary-swatch"
+                                                        style="background: #9C27B0; box-shadow: 0 0 0 6px #E1BEE7, 0 0 0 12px #6A1B9A, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span><span
+                                                        class="secondary-swatch"
+                                                        style="background: #8BC34A; box-shadow: 0 0 0 6px #DCEDC8, 0 0 0 12px #558B2F, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-6 my-1">
+                                                <div class="swatch waves-effect tooltipped" data-position="top"
+                                                    data-tooltip="purple" data-color="purple"><span
+                                                        class="primary-swatch"
+                                                        style="background: #9c27b0; box-shadow: 0 0 0 6px #f3e5f5, 0 0 0 12px #6a1b9a, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span><span
+                                                        class="secondary-swatch"
+                                                        style="background: #aa00ff; box-shadow: 0 0 0 6px #ea80fc, 0 0 0 12px #4a148c, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-6 my-1">
+                                                <div class="swatch waves-effect tooltipped" data-position="top"
+                                                    data-tooltip="passion" data-color="passion"><span
+                                                        class="primary-swatch"
+                                                        style="background: #E91E63; box-shadow: 0 0 0 6px #F8BBD0, 0 0 0 12px #880E4F, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span><span
+                                                        class="secondary-swatch"
+                                                        style="background: #304FFE; box-shadow: 0 0 0 6px #C5CAE9, 0 0 0 12px #1A237E, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-6 my-1">
+                                                <div class="swatch waves-effect tooltipped" data-position="top"
+                                                    data-tooltip="burgundy" data-color="burgundy"><span
+                                                        class="primary-swatch"
+                                                        style="background: #e91e63; box-shadow: 0 0 0 6px #f8bbd0, 0 0 0 12px #ad1457, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span><span
+                                                        class="secondary-swatch"
+                                                        style="background: #2196f3; box-shadow: 0 0 0 6px #bbdefb, 0 0 0 12px #1565c0, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-6 my-1">
+                                                <div class="swatch waves-effect tooltipped" data-position="top"
+                                                    data-tooltip="vampire" data-color="vampire"><span
+                                                        class="primary-swatch"
+                                                        style="background: #f44336; box-shadow: 0 0 0 6px #FFEBEE, 0 0 0 12px #E53935, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span><span
+                                                        class="secondary-swatch"
+                                                        style="background: #607D8B; box-shadow: 0 0 0 6px #ECEFF1, 0 0 0 12px #455A64, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-6 my-1">
+                                                <div class="swatch waves-effect tooltipped" data-position="top"
+                                                    data-tooltip="roseGold" data-color="roseGold"><span
+                                                        class="primary-swatch"
+                                                        style="background: #EC407A; box-shadow: 0 0 0 6px #FCE4EC, 0 0 0 12px #D81B60, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span><span
+                                                        class="secondary-swatch"
+                                                        style="background: #FFA000; box-shadow: 0 0 0 6px #FFF8E1, 0 0 0 12px #FF6F00, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-6 my-1">
+                                                <div class="swatch waves-effect tooltipped" data-position="top"
+                                                    data-tooltip="violet" data-color="violet"><span
+                                                        class="primary-swatch"
+                                                        style="background: #EC407A; box-shadow: 0 0 0 6px #FCE4EC, 0 0 0 12px #D81B60, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span><span
+                                                        class="secondary-swatch"
+                                                        style="background: #673AB7; box-shadow: 0 0 0 6px #D1C4E9, 0 0 0 12px #311B92, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-6 my-1">
+                                                <div class="swatch waves-effect tooltipped" data-position="top"
+                                                    data-tooltip="ubuntu" data-color="ubuntu"><span
+                                                        class="primary-swatch"
+                                                        style="background: #EF6C00; box-shadow: 0 0 0 6px #FFF3E0, 0 0 0 12px #E65100, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span><span
+                                                        class="secondary-swatch"
+                                                        style="background: #9C27B0; box-shadow: 0 0 0 6px #F3E5F5, 0 0 0 12px #7B1FA2, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-6 my-1">
+                                                <div class="swatch waves-effect tooltipped" data-position="top"
+                                                    data-tooltip="gold" data-color="gold"><span class="primary-swatch"
+                                                        style="background: #FF9100; box-shadow: 0 0 0 6px #FFF9C4, 0 0 0 12px #FF6D00, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span><span
+                                                        class="secondary-swatch"
+                                                        style="background: #8D6E63; box-shadow: 0 0 0 6px #EFEBE9, 0 0 0 12px #4E342E, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-6 my-1">
+                                                <div class="swatch waves-effect tooltipped" data-position="top"
+                                                    data-tooltip="deepBlue" data-color="deepBlue"><span
+                                                        class="primary-swatch"
+                                                        style="background: #3F51B5; box-shadow: 0 0 0 6px #E8EAF6, 0 0 0 12px #283593, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span><span
+                                                        class="secondary-swatch"
+                                                        style="background: #03A9F4; box-shadow: 0 0 0 6px #E1F5FE, 0 0 0 12px #0277BD, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-6 my-1">
+                                                <div class="swatch waves-effect tooltipped" data-position="top"
+                                                    data-tooltip="mint" data-color="mint"><span class="primary-swatch"
+                                                        style="background: #2196f3; box-shadow: 0 0 0 6px #bbdefb, 0 0 0 12px #0d47a1, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span><span
+                                                        class="secondary-swatch"
+                                                        style="background: #03a9f4; box-shadow: 0 0 0 6px #b3e5fc, 0 0 0 12px #01579b, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-6 my-1">
+                                                <div class="swatch waves-effect tooltipped" data-position="top"
+                                                    data-tooltip="fresh" data-color="fresh"><span class="primary-swatch"
+                                                        style="background: #03ACF2; box-shadow: 0 0 0 6px #B3E5FC, 0 0 0 12px #01579B, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span><span
+                                                        class="secondary-swatch"
+                                                        style="background: #4CAF50; box-shadow: 0 0 0 6px #C8E6C9, 0 0 0 12px #357A38, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-6 my-1">
+                                                <div class="swatch waves-effect tooltipped" data-position="top"
+                                                    data-tooltip="ocean-blue" data-color="ocean-blue"><span
+                                                        class="primary-swatch"
+                                                        style="background: #2196f3; box-shadow: 0 0 0 6px #bbdefb, 0 0 0 12px #0d47a1, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span><span
+                                                        class="secondary-swatch"
+                                                        style="background: #00bcd4; box-shadow: 0 0 0 6px #b2ebf2, 0 0 0 12px #006064, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-6 my-1">
+                                                <div class="swatch waves-effect tooltipped" data-position="top"
+                                                    data-tooltip="cloud" data-color="cloud"><span class="primary-swatch"
+                                                        style="background: #03A9F4; box-shadow: 0 0 0 6px #B3E5FC, 0 0 0 12px #01579B, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span><span
+                                                        class="secondary-swatch"
+                                                        style="background: #FF9800; box-shadow: 0 0 0 6px #FFE0B2, 0 0 0 12px #E65100, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-6 my-1">
+                                                <div class="swatch waves-effect tooltipped" data-position="top"
+                                                    data-tooltip="littleQueen" data-color="littleQueen"><span
+                                                        class="primary-swatch"
+                                                        style="background: #00BCD4; box-shadow: 0 0 0 6px #E0F7FA, 0 0 0 12px #006064, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span><span
+                                                        class="secondary-swatch"
+                                                        style="background: #F06292; box-shadow: 0 0 0 6px #FCE4EC, 0 0 0 12px #AD1457, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-6 my-1">
+                                                <div class="swatch waves-effect tooltipped" data-position="top"
+                                                    data-tooltip="smart" data-color="smart"><span class="primary-swatch"
+                                                        style="background: #00BCD4; box-shadow: 0 0 0 6px #B2EBF2, 0 0 0 12px #00838F, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span><span
+                                                        class="secondary-swatch"
+                                                        style="background: #FFA000; box-shadow: 0 0 0 6px #FFECB3, 0 0 0 12px #FF6F00, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-6 my-1">
+                                                <div class="swatch waves-effect tooltipped" data-position="top"
+                                                    data-tooltip="botani" data-color="botani"><span
+                                                        class="primary-swatch"
+                                                        style="background: #689F38; box-shadow: 0 0 0 6px #DCEDC8, 0 0 0 12px #33691E, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span><span
+                                                        class="secondary-swatch"
+                                                        style="background: #F06292; box-shadow: 0 0 0 6px #FCE4EC, 0 0 0 12px #AD1457, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-6 my-1">
+                                                <div class="swatch waves-effect tooltipped" data-position="top"
+                                                    data-tooltip="money" data-color="money"><span class="primary-swatch"
+                                                        style="background: #4CAF50; box-shadow: 0 0 0 6px #C8E6C9, 0 0 0 12px #2E7D32, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span><span
+                                                        class="secondary-swatch"
+                                                        style="background: #FFA000; box-shadow: 0 0 0 6px #FFECB3, 0 0 0 12px #FF6F00, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-6 my-1">
+                                                <div class="swatch waves-effect tooltipped" data-position="top"
+                                                    data-tooltip="green-leaf" data-color="green-leaf"><span
+                                                        class="primary-swatch"
+                                                        style="background: #009688; box-shadow: 0 0 0 6px #E0F7FA, 0 0 0 12px #00695C, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span><span
+                                                        class="secondary-swatch"
+                                                        style="background: #607D8B; box-shadow: 0 0 0 6px #CFD8DC, 0 0 0 12px #37474F, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-6 my-1">
+                                                <div class="swatch waves-effect tooltipped" data-position="top"
+                                                    data-tooltip="greenNature" data-color="greenNature"><span
+                                                        class="primary-swatch"
+                                                        style="background: #009688; box-shadow: 0 0 0 6px #E0F7FA, 0 0 0 12px #00695C, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span><span
+                                                        class="secondary-swatch"
+                                                        style="background: #689F38; box-shadow: 0 0 0 6px #F1F8E9, 0 0 0 12px #33691E, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-6 my-1">
+                                                <div class="swatch waves-effect tooltipped" data-position="top"
+                                                    data-tooltip="brown" data-color="brown"><span class="primary-swatch"
+                                                        style="background: #795548; box-shadow: 0 0 0 6px #d7ccc8, 0 0 0 12px #4e342e, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span><span
+                                                        class="secondary-swatch"
+                                                        style="background: #794848; box-shadow: 0 0 0 6px #ccb0b0, 0 0 0 12px #3e2723, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-6 my-1">
+                                                <div class="swatch waves-effect tooltipped" data-position="top"
+                                                    data-tooltip="grayscale" data-color="grayscale"><span
+                                                        class="primary-swatch"
+                                                        style="background: #546E7A; box-shadow: 0 0 0 6px #CFD8DC, 0 0 0 12px #263238, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span><span
+                                                        class="secondary-swatch"
+                                                        style="background: #6D4C41; box-shadow: 0 0 0 6px #D7CCC8, 0 0 0 12px #3E2723, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-6 my-1">
+                                                <div class="swatch waves-effect tooltipped" data-position="top"
+                                                    data-tooltip="black" data-color="black"><span class="primary-swatch"
+                                                        style="background: #212121; box-shadow: 0 0 0 6px #9e9e9e, 0 0 0 12px #000, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span><span
+                                                        class="secondary-swatch"
+                                                        style="background: #757575; box-shadow: 0 0 0 6px #E0E0E0, 0 0 0 12px #424242, rgba(0, 0, 0, 0.45) 0px 0px 6px 12px">&nbsp;</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <!-- home start -->
+                <div id="home"></div>
+                <div class="main-wrap">
+                    <div class="sidenav mobile-nav" id="slide-menu">
+                        <div class="menu">
+                            <ul class="collection">
+                                <li class="collection-item" style="animation-duration: 0.25s"><a
+                                        class="sidenav-close waves-effect menu-list" href="#promotions">promotions</a>
+                                </li>
+                                <li class="collection-item" style="animation-duration: 0.5s"><a
+                                        class="sidenav-close waves-effect menu-list" href="#featured">featured</a></li>
+                                <li class="collection-item" style="animation-duration: 0.75s"><a
+                                        class="sidenav-close waves-effect menu-list" href="#top">top categories</a></li>
+                                <li class="collection-item" style="animation-duration: 1s"><a
+                                        class="sidenav-close waves-effect menu-list" href="#all">all categories</a></li>
+                               </ul>
+                            <hr class="divider-sidebar">
+                            
+                        </div>
+                    </div>
+                    <!-- ##### HEADER #####-->
+                    <header class="app-bar header" id="header">
+                        <div class="container fixed-width-lg-up">
+                            <div class="header-content">
+                                <nav class="nav-logo nav-menu"><button
+                                        class="mobile-menu btn-icon waves-effect hamburger hamburger--spin show-md-down"
+                                        id="mobile_menu" type="button"><span class="hamburger-box"><span
+                                                class="bar hamburger-inner"></span></span></button>
+                                    <div class="logo scrollnav"><a href="#banner"><img
+                                                src="../assets/images/movie-logo.png" alt="logo"></a></div>
+                                    <div>
+                                        <div class="scrollactive-nav show-lg-up scrollnav">
+                                            <ul>
+                                                <li class="d-none"><a href="#banner"></a></li>
+                                                <li><a class="btn btn-flat anchor-link waves-effect"
+                                                        href="#promotions">promotions</a></li>
+                                                <li><a class="btn btn-flat anchor-link waves-effect"
+                                                        href="#featured">featured</a></li>
+                                                <li><a class="btn btn-flat anchor-link waves-effect" href="#top">top
+                                                        categories</a></li>
+                                                <li><a class="btn btn-flat anchor-link waves-effect" href="#all">all
+                                                        categories</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+                                <div class="hidden-md-down"><span class="divider"></span></div>
+                                <nav class="nav-menu nav-auth">
+
+                                    <div class="menu-setting">
+                                        <div class="setting"><button
+                                                class="btn-icon waves-effect btn-small m-2 dropdown-trigger"
+                                                data-target="dropdown_config" type="button" data-align="left"><i
+                                                    class="icon material-icons" id="setting_icon">settings</i></button>
+                                            <div class="dropdown-content" id="dropdown_config">
+                                                <ul class="collection with-header">
+                                                    <li class="collection-header">theme mode</li>
+                                                    <li class="collection-item no-hover pl-4">
+                                                        <div class="flex-menu">
+                                                            <div class="switch"><label>light<input id="theme_switcher"
+                                                                        type="checkbox"><span
+                                                                        class="lever"></span>dark</label></div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="dropdown-divider"></div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- ##### END HEADER #####-->
+                    <main class="container-wrap">
+                        <!-- ##### BANNER #####-->
+                        <section id="banner">
+                            <div class="root">
+                                <div class="video">
+                                    <div class="overlay"></div><img class="show-md-down"
+                                        src="https://www.vssewingmachine.com/wp-content/uploads/2019/06/capture.png"
+                                        alt="cover"> <img id="banner_cover"
+                                        src="https://www.vssewingmachine.com/wp-content/uploads/2019/06/capture.png"
+                                        alt="cover">
+                                    <!-- <div class="show-lg-up" id="youtube"></div> -->
+                                    <div class="caption">
+                                        <div class="container">
+                                            <div class="hidden-sm-down"><button
+                                                    class="btn-icon btn-play waves-effect hide" id="btn_play"><span
+                                                        class="hidden">watch</span> <span class="hidden">trailer</span>
+                                                    <i class="ion-ios-pause-outline pause"></i> <i
+                                                        class="ion-arrow-right-b play"></i></button></div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <!-- <h1 class="use-text-title">VS</h1> -->
+                                                    <h2 class="use-text-title">VS Sewing Machines</h2>
+                                                    <p class="use-text-subtitle">Usha | Singer Merritt | Juki | Jack | Gemsy </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ##### END BANNER #####-->
+                        <!-- ##### PROMOTION #####-->
+                        <section id="promotions">
+                            <div class="root">
+                                <div class="slider-wrap">
+                                    <div class="anim-slider">
+                                        <div class="slide slider-content anim-slide">
+                                            <section class="inner item">
+                                                <div class="inner-bg">
+                                                    <div class="background">
+                                                        <figure><img
+                                                                src="/movie/assets/promotions/tailor-super-deluxe-top_1.jpg"
+                                                                alt="promotion"></figure>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-7 pa-0">
+                                                            <div class="text">
+                                                                <h4><span class="use-text-subtitle2"></span>Usha</h4>
+                                                                <div class="property">
+                                                                    <div class="star"><i
+                                                                            class="material-icons star-icon"
+                                                                            title="1">star</i> <i
+                                                                            class="material-icons star-icon"
+                                                                            title="2">star</i> <i
+                                                                            class="material-icons star-icon"
+                                                                            title="3">star</i> <i
+                                                                            class="material-icons star-icon"
+                                                                            title="4">star</i> <i
+                                                                            class="material-icons star-icon"
+                                                                            title="5">star</i></div>5.0
+                                                                </div>
+                                                                <article class="desc">
+                                                                    <h6 class="use-text-paragraph">
+                                                                        Usha Janome Wonder Stitch Automatic Zig-Zag Electric Sewing Machine. ... Apart from the details mentioned above, the machine also has drop feed for embroidery, auto tripping bobbin system, triple strength stitch, and a dial-type stitch selector. The machine has a speed of 860 stitches per minute
+                                                                    </h6>
+                                                                </article>
+                                                                <div class="btn-area"> <a
+                                                                        class="btn primary waves-effect" href="#">Viwe More</a></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-5 pa-0">
+                                                            <div class="hidden-xs-down">
+                                                                <div class="image">
+                                                                    <figure><img
+                                                                            src="/movie/assets/promotions/tailor-super-deluxe-top_1.jpg"
+                                                                            alt="promotion"></figure>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                        <div class="slide slider-content anim-slide">
+                                            <section class="inner item">
+                                                <div class="inner-bg">
+                                                    <div class="background">
+                                                        <figure><img
+                                                                src="/movie/assets/promotions/img_4623_1.jpg"
+                                                                alt="promotion"></figure>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-7 pa-0">
+                                                            <div class="text">
+                                                                <h4><span class="use-text-subtitle2"></span>Singer Merritt</h4>
+                                                                <div class="property">
+                                                                    <div class="star"><i
+                                                                            class="material-icons star-icon"
+                                                                            title="1">star</i> <i
+                                                                            class="material-icons star-icon"
+                                                                            title="2">star</i> <i
+                                                                            class="material-icons star-icon"
+                                                                            title="3">star</i> <i
+                                                                            class="material-icons star-icon"
+                                                                            title="4">star</i> <i
+                                                                            class="material-icons star-icon"
+                                                                            title="5">star</i></div>5.0
+                                                                </div>
+                                                                <article class="desc">
+                                                                    <h6 class="use-text-paragraph">
+                                                                        Manufactured using fine raw material and advanced machines at our vendors end, the offered Singer Merritt Sewing Machine is known for its low maintenance requirement. It can be moved to any place easily and offers a long service life.   
+                                                                    </h6>
+                                                                </article>
+                                                                <div class="btn-area"> <a
+                                                                        class="btn primary waves-effect" href="#">Viwe More</a></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-5 pa-0">
+                                                            <div class="hidden-xs-down">
+                                                                <div class="image">
+                                                                    <figure><img
+                                                                            src="/movie/assets/promotions/img_4623_1.jpg"
+                                                                            alt="promotion"></figure>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                        <div class="slide slider-content anim-slide">
+                                            <section class="inner item">
+                                                <div class="inner-bg">
+                                                    <div class="background">
+                                                        <figure><img
+                                                                src="/movie/assets/promotions/ISM-DDL8100eB-1.jpg"
+                                                                alt="promotion"></figure>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-7 pa-0">
+                                                            <div class="text">
+                                                                <h4><span class="use-text-subtitle2"></span>Juki</h4>
+                                                                <div class="property">
+                                                                    <div class="star"><i
+                                                                            class="material-icons star-icon"
+                                                                            title="1">star</i> <i
+                                                                            class="material-icons star-icon"
+                                                                            title="2">star</i> <i
+                                                                            class="material-icons star-icon"
+                                                                            title="3">star</i> <i
+                                                                            class="material-icons star-icon"
+                                                                            title="4">star</i> <i
+                                                                            class="material-icons star-icon"
+                                                                            title="5">star</i></div>5.0
+                                                                </div>
+                                                                <article class="desc">
+                                                                    <h6 class="use-text-paragraph">
+                                                                        JUKI produces a selection of household sewing machines, tailor-use sewing machines, small-sized lock sewing machines, and quilt-making long-arm sewing machines as a comprehensive manufacturer. JUKI sells high-precision technology cultivated through a long history of industrial sewing machine development
+                                                                    </h6>
+                                                                </article>
+                                                                <div class="btn-area"> <a
+                                                                        class="btn primary waves-effect" href="#">Viwe More</a></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-5 pa-0">
+                                                            <div class="hidden-xs-down">
+                                                                <div class="image">
+                                                                    <figure><img
+                                                                            src="/movie/assets/promotions/ISM-DDL8100eB-1.jpg"
+                                                                            alt="promotion"></figure>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                        <div class="slide slider-content anim-slide">
+                                            <section class="inner item">
+                                                <div class="inner-bg">
+                                                    <div class="background">
+                                                        <figure><img
+                                                                src="/movie/assets/promotions/jack-sewing-machine-a2-500x500.jpg"
+                                                                alt="promotion"></figure>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-7 pa-0">
+                                                            <div class="text">
+                                                                <h4><span class="use-text-subtitle2"></span>Jack</h4>
+                                                                <div class="property">
+                                                                    <div class="star"><i
+                                                                            class="material-icons star-icon"
+                                                                            title="1">star</i> <i
+                                                                            class="material-icons star-icon"
+                                                                            title="2">star</i> <i
+                                                                            class="material-icons star-icon"
+                                                                            title="3">star</i> <i
+                                                                            class="material-icons star-icon"
+                                                                            title="4">star</i> <i
+                                                                            class="material-icons star-icon"
+                                                                            title="5">star</i></div>5.0
+                                                                </div>
+                                                                <article class="desc">
+                                                                    <h6 class="use-text-paragraph">
+                                                                        Jack sewing machines have survey motors. The major advantage of this machine is its power saving feature. It saves 75% more power compared to other sewing machines. It is one of the fast moving sewing machine brand in the industry.
+                                                                    </h6>
+                                                                </article>
+                                                                <div class="btn-area"> <a
+                                                                        class="btn primary waves-effect" href="#">Viwe More</a></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-5 pa-0">
+                                                            <div class="hidden-xs-down">
+                                                                <div class="image">
+                                                                    <figure><img
+                                                                            src="/movie/assets/promotions/jack-sewing-machine-a2-500x500.jpg"
+                                                                            alt="promotion"></figure>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                        
+                                        <div class="anim-arrows"><a class="anim-arrows-prev prev" href="#"><i
+                                                    class="ion-ios-arrow-thin-left arrow-icon"></i> </a><a
+                                                class="anim-arrows-next next" href="#"><i
+                                                    class="ion-ios-arrow-thin-right arrow-icon"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ##### END PROMOTION #####-->
+                        
+                        <!-- ##### FEATURED #####-->
+                        <section class="space-top-short" id="featured">
+                            <div class="root">
+                                <div class="decoration"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px">
+                                        <g>
+                                            <path
+                                                d="M1280,925c-133.8-192.4-264-288.5-390.5-288.5c-189.8,0-387.2,389.8-606.5,268C136.8,823.2,42.5,750.6,0,686.5V81c114.5,99.3,229.7,148.9,345.8,148.9c174.1,0,228.2-332.1,454.9-198C951.8,121.3,1118.6,137.7,1301,81L1280,925z">
+                                            </path>
+                                        </g>
+                                    </svg></div>
+                                <div class="container fixed width-md-up">
+                                    <div class="row spacing3">
+                                        <div class="col-md-3 py-10">
+                                            <div class="title-main align-left">
+                                                <h4 class="primary-title">NEW </h4>
+                                                <h4 class="secondary-title">Models</h4>
+                                            </div>
+                                            <p class="use-text-paragrpah"></p>
+                                        </div>
+                                        <div class="col-md-3 col-sm-4">
+                                            <div class="card movie-thumb"><a class="btn-wrap waves-effect"
+                                                    href="#"><span class="figure"><i
+                                                            class="ion-arrow-right-b play"></i> <img
+                                                            src="/movie/assets/promotions/usha-8801-e.png"
+                                                            alt="Cras convallis lacus"> <span
+                                                            class="figcaption">new</span> </span><span class="text">Usha 8801 e</span></a></div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-4">
+                                            <div class="card movie-thumb"><a class="btn-wrap waves-effect"
+                                                    href="#"><span class="figure"><i
+                                                            class="ion-arrow-right-b play"></i> <img
+                                                            src="/movie/assets/promotions/wonder-stitch-plus.jpg"
+                                                            alt="Cras convallis lacus"> <span
+                                                            class="figcaption">new</span> </span><span class="text">Wonder Stitch  </span></a></div>
+                                        </div>
+
+                                        <div class="col-md-3 col-sm-4">
+                                            <div class="card movie-thumb"><a class="btn-wrap waves-effect"
+                                                    href="#"><span class="figure"><i
+                                                            class="ion-arrow-right-b play"></i> <img
+                                                            src="/movie/assets/promotions/singer-3342.jpg"
+                                                            alt="Cras convallis lacus"> <span
+                                                            class="figcaption">new</span> </span><span class="text">Singer 3342</span></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ##### END FEATURED #####-->
+                        <!-- ##### TRENDING #####-->
+                        <section class="space-top" id="trending">
+                            <div class="root">
+                                <div class="hidden-xs-down">
+                                    <div class="grid-25"><img
+                                            src="https://image.freepik.com/free-vector/delivery-service-with-man-truck-mask_23-2148496522.jpg"
+                                            alt="trending">
+                                        <a class="overlay waves-effect" href="javascript:void(0)">
+                                            <h5 class="display-2"> Shipping </h5>
+                                        </a>
+                                    </div>
+                                    <div class="grid-50"><img
+                                            src="https://img.freepik.com/free-vector/customer-giving-quality-feedback_74855-5482.jpg?size=626&ext=jpg"
+                                            alt="trending">
+                                        <a class="overlay waves-effect" href="javascript:void(0)">
+                                            <h3 class="display-2"><!--<i class="ion-coffee"></i>-->Trusted Customers</h3>
+                                        </a>
+                                    </div>
+                                    <div class="grid-25"><img
+                                            src="https://img.freepik.com/free-vector/female-customer-service_7737-1767.jpg?size=626&ext=jpg"
+                                            alt="trending">
+                                        <a class="overlay waves-effect" href="javascript:void(0)">
+                                            <h5 class="display-2">24/7 Customer Service  </h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="hidden-sm-up">
+                                    <div class="slick-carousel" id="trending_carousel">
+                                        <div class="item">
+                                            <div class="grid-25"><img
+                                                    src="https://image.freepik.com/free-vector/delivery-service-with-man-truck-mask_23-2148496522.jpg"
+                                                    alt="trending">
+                                                <a class="overlay waves-effect" href="javascript:void(0)">
+                                                    <h5 class="display-2">Shipping</h5>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="grid-50"><img
+                                                    src="https://img.freepik.com/free-vector/customer-giving-quality-feedback_74855-5482.jpg?size=626&ext=jpg"
+                                                    alt="trending">
+                                                <a class="overlay waves-effect" href="javascript:void(0)">
+                                                    <h3 class="display-2"><span>24/7 Customer Service</span></h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="grid-25"><img
+                                                    src="https://res.cloudinary.com/imajin/image/upload/v1592043745/movie/trending3_dd1yxr.jpg"
+                                                    alt="trending">
+                                                <a class="overlay waves-effect" href="javascript:void(0)">
+                                                    <h5 class="headline">FREE Up to 5 Episodes</h5>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ##### END TRENDING #####-->
+                        <!-- ##### CATEGORIES #####-->
+                        <section class="space-top" id="top">
+                            <div class="root">
+                                <div class="container fixed-width-lg-up">
+                                    <div class="row spacing3">
+                                        <div class="col-md-6 pa-3 pt-10">
+                                            <div class="title-main align-left">
+                                                <h4 class="primary-title">Top</h4>
+                                                <h4 class="secondary-title">Categories</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6 pa-3"><a
+                                                class="category full button-base waves-effect"
+                                                style="background-color: #E79A1C"><img
+                                                    src="/movie/assets/promotions/jack.png"
+                                                    alt="Academy Awards"> <span class="property"><span
+                                                        class="title-category">Jack</span>
+                                                        <span class="total use-text-paragraph"></span></span></a>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6 pa-3"><a
+                                                class="category full button-base waves-effect"
+                                                style="background-color: #E91E63"><img
+                                                    src="/movie/assets/promotions/Usha.png"
+                                                    alt="Animations"> <span class="property"><span
+                                                        class="title-category">Usha</span>
+                                                        <span     class="total use-text-paragraph"></span></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="row spacing3">
+                                        <div class="col-md-6 py-0 px-3">
+                                            <div class="category half-char" style="background-color: #1A237E"><img
+                                                    class="shadow"
+                                                    src="/movie/assets/promotions/Gemsy.png"
+                                                    alt="Actions"> <img
+                                                    src="/movie/assets/promotions/Gemsy.png"
+                                                    alt="Actions"> <span class="property"><span
+                                                        class="title-category use-text-title2">Gemsy</span><span
+                                                        class="total use-text-subtitle2"></span><span
+                                                        class="hidden-xs-down"><a
+                                                            class="btn btn-outlined white secondary-text button block waves-effect">Explore</a></span></span>
+                                            </div>
+                                            <div class="row spacing3">
+                                                <div class="col-md-6 col-sm-6 py-3 px-0 ps-sm-0 pe-sm-3"><a
+                                                        class="category full button-base waves-effect"
+                                                        style="background-color: #14A8B9"><img
+                                                            src="/movie/assets/promotions/Singer Merritt.png"
+                                                            alt="Romance Drama"> <span class="property"><span
+                                                                class="title-category">Singer Merritt
+                                                            </span><span class="total use-text-paragraph"></span></span></a></div>
+                                                <div class="col-md-6 col-sm-6 py-3 px-0 ps-sm-3 pe-sm-0"><a
+                                                        class="category full button-base waves-effect"
+                                                        style="background-color: #2AA845"><img
+                                                            src="/movie/assets/promotions/Juki.png"
+                                                            alt="Commedy"> <span class="property"><span
+                                                                class="title-category">Juki</span><span
+                                                                class="total use-text-paragraph"></span></span></a></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 py-0 px-3">
+                                            <div class="category full-char" style="background-color: #ED3626"><img
+                                                    class="shadow"
+                                                    src="/movie/assets/promotions/bernina.png"
+                                                    alt="Super Heroes"> <img
+                                                    src="/movie/assets/promotions/bernina.png"
+                                                    alt="Super Heroes"> <span class="property"><span
+                                                        class="title-category use-text-title2">Bernina</span><span
+                                                        class="total use-text-subtitle2"></span><span
+                                                        class="hidden-xs-down"><a
+                                                            class="btn btn-outlined white secondary-text button block waves-effect">Explore</a></span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ##### END CATEGORIES #####-->
+                        <!-- ##### ALL CATEGORIES #####-->
+                        <section class="space-top-short" id="all">
+                            <div class="root">
+                                <div class="container">
+                                    <div class="title-main align-center">
+                                        <h4 class="primary-title">Best Featured Models</h4>
+                                        <h4 class="secondary-title">Categories</h4>
+                                    </div>
+                                    <div class="carousel-wrap"><button class="btn nav prev waves-effect"
+                                            id="prev_product"><i class="material-icons">arrow_back</i></button><button
+                                            class="btn nav next waves-effect" id="next_product"><i
+                                                class="material-icons">arrow_forward</i></button>
+                                        <div class="slick-carousel" id="product_carousel">
+                                            <div class="item"><a class="simple-thumb waves-effect"
+                                                    href="#"><span class="wrap"><img  src="/movie/assets/promotions/BFM 1.png" style="height: 100%;width: 100%;"/></span><span
+                                                    class="text">Usha Janome Allure DLX </span></a></div>
+                                            <div class="item"><a class="simple-thumb waves-effect"
+                                                        href="#"><span class="wrap"><img  src="/movie/assets/promotions/BFM 2.png" style="height: 100%;width: 100%;"/></span><span
+                                                        class="text">Usha 8801 e </span></a></div>
+                                            <div class="item"><a class="simple-thumb waves-effect"
+                                                            href="#"><span class="wrap"><img  src="/movie/assets/promotions/BFM 3.png" style="height: 100%;width: 100%;"/></span><span
+                                                            class="text">Wonder Stitch</span></a></div>
+                                            <div class="item"><a class="simple-thumb waves-effect"
+                                                                href="#"><span class="wrap"><img  src="/movie/assets/promotions/BFM 4.png" style="height: 100%;width: 100%;"/></span><span
+                                                                class="text">Singer Start 1306 </span></a></div>
+                                                                <div class="item"><a class="simple-thumb waves-effect"
+                                                                    href="#"><span class="wrap"><img  src="/movie/assets/promotions/BFM 5.png" style="height: 100%;width: 100%;"/></span><span
+                                                                    class="text">Singer 8280 </span></a></div>
+                                                                    <div class="item"><a class="simple-thumb waves-effect"
+                                                                        href="#"><span class="wrap"><img  src="/movie/assets/promotions/BFM 6.png" style="height: 100%;width: 100%;"/></span><span
+                                                                        class="text">Singer 3342                                                                    </span></a></div>
+                                                                                                                                                                                                   
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ##### END ALL CATEGORIES #####-->
+                        <!-- ##### PRICING #####-->
+                        <!-- <section class="space-top-short" id="services">
+                            <div class="root">
+                                <div class="carousel-handle">
+                                    <div class="carousel-wrap">
+                                        <div class="carousel">
+                                            <div class="slick-carousel slick-initialized slick-slider" id="services_carousel" data-length="6">
+                                                <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 50000px; transform: translate3d(-500px, 0px, 0px);"><div class="item show-lg-up slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1">
+                                                    <div class="carousel-prop">
+                                                        <div></div>
+                                                    </div>
+                                                </div><div class="item show-lg-up slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1">
+                                                    <div class="carousel-prop">
+                                                        <div></div>
+                                                    </div>
+                                                </div><div class="item slick-slide slick-current slick-active" data-slick-index="2" aria-hidden="false" tabindex="0">
+                                                    <div class="card default-card">
+                                                        <figure><img src="https://res.cloudinary.com/imajin/image/upload/v1583497239/agency/service1_x3q49z.jpg" alt="img"></figure>
+                                                        <div class="text">
+                                                            <h6 class="title">Lorem Ipsum</h6>
+                                                            <p>Proin ac arcu nisl. Duis eu molestie lectus. Nam quis mauris faucibus, aliquet elit eu, rhoncus ipsum.</p>
+                                                        </div><a class="btn btn-outlined waves-effect block primary button" tabindex="0">see detail</a></div>
+                                                </div><div class="item slick-slide slick-active" data-slick-index="3" aria-hidden="false" tabindex="0">
+                                                    <div class="card default-card">
+                                                        <figure><img src="https://res.cloudinary.com/imajin/image/upload/v1583497239/agency/service2_o8mdey.jpg" alt="img"></figure>
+                                                        <div class="text">
+                                                            <h6 class="title">Etiam rhoncus</h6>
+                                                            <p>Proin quis pellentesque dui. Ut sed leo neque. Nullam aliquet iaculis neque a commodo.</p>
+                                                        </div><a class="btn btn-outlined waves-effect block primary button" tabindex="0">see detail</a></div>
+                                                </div><div class="item slick-slide slick-active" data-slick-index="4" aria-hidden="false" tabindex="0">
+                                                    <div class="card default-card">
+                                                        <figure><img src="https://res.cloudinary.com/imajin/image/upload/v1583497239/agency/service3_hiunda.jpg" alt="img"></figure>
+                                                        <div class="text">
+                                                            <h6 class="title">Duis fermentum</h6>
+                                                            <p>Quisque consectetur lectus vel orci porttitor gravida ac eu erat. Nullam accumsan nibh tortor.</p>
+                                                        </div><a class="btn btn-outlined waves-effect block primary button" tabindex="0">see detail</a></div>
+                                                </div><div class="item slick-slide slick-active" data-slick-index="5" aria-hidden="false" tabindex="0">
+                                                    <div class="card default-card">
+                                                        <figure><img src="https://res.cloudinary.com/imajin/image/upload/v1583497239/agency/service1_x3q49z.jpg" alt="img"></figure>
+                                                        <div class="text">
+                                                            <h6 class="title">Lorem Ipsum</h6>
+                                                            <p>Proin ac arcu nisl. Duis eu molestie lectus. Nam quis mauris faucibus, aliquet elit eu, rhoncus ipsum.</p>
+                                                        </div><a class="btn btn-outlined waves-effect block primary button" tabindex="0">see detail</a></div>
+                                                </div><div class="item slick-slide slick-active" data-slick-index="6" aria-hidden="false" tabindex="0">
+                                                    <div class="card default-card">
+                                                        <figure><img src="https://res.cloudinary.com/imajin/image/upload/v1583497239/agency/service2_o8mdey.jpg" alt="img"></figure>
+                                                        <div class="text">
+                                                            <h6 class="title">Etiam rhoncus</h6>
+                                                            <p>Proin quis pellentesque dui. Ut sed leo neque. Nullam aliquet iaculis neque a commodo.</p>
+                                                        </div><a class="btn btn-outlined waves-effect block primary button" tabindex="0">see detail</a></div>
+                                                </div><div class="item slick-slide" data-slick-index="7" aria-hidden="true" tabindex="-1">
+                                                    <div class="card default-card">
+                                                        <figure><img src="https://res.cloudinary.com/imajin/image/upload/v1583497239/agency/service3_hiunda.jpg" alt="img"></figure>
+                                                        <div class="text">
+                                                            <h6 class="title">Duis fermentum</h6>
+                                                            <p>Quisque consectetur lectus vel orci porttitor gravida ac eu erat. Nullam accumsan nibh tortor.</p>
+                                                        </div><a class="btn btn-outlined waves-effect block primary button" tabindex="-1">see detail</a></div>
+                                                </div><div class="item show-lg-up slick-slide" data-slick-index="8" aria-hidden="true" tabindex="-1">
+                                                    <div class="carousel-prop">
+                                                        <div></div>
+                                                    </div>
+                                                </div><div class="item show-lg-up slick-slide" data-slick-index="9" aria-hidden="true" tabindex="-1">
+                                                    <div class="carousel-prop">
+                                                        <div></div>
+                                                    </div>
+                                                </div></div></div>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="floating-title">
+                                    <div class="container fixed-width">
+                                        <div class="title">
+                                            <div class="title-icon-deco extend"><i class="material-icons icon">apps</i>
+                                                <h3>Our Services</h3>
+                                            </div>
+                                            <nav class="arrow"><button class="btn-floating margin" id="prev_services"><i class="material-icons">arrow_back</i></button> <button class="btn-floating margin" id="next_services"><i class="material-icons">arrow_forward</i></button></nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section> -->
+                        <!-- ##### END PRICING #####-->
+                        <!-- ##### FAQ #####-->
+                        <section class="space-top" id="faq">
+                            <div class="root">
+                                <div class="container fixed-width">
+                                    <div class="row spacing6">
+                                        <div class="col-md-6 pa-6">
+                                            <div class="title-main align-left">
+                                                <h4 class="primary-title">Best Sewing Machine Dealer in Chennai
+                                                    </h4>
+                                                
+                                            </div>
+                                            <!-- <p class="text use-text-subtitle2 text-md-start text-center">Have a
+                                                question? Check out our frequently asked questions to find your answer.
+                                            </p> -->
+                                            <div class="hidden-sm-down">
+                                                <div class="illustration"><img src="../assets/images/movie/faq.png"
+                                                        alt="illustration"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 pa-6">
+                                            <div class="accordion">
+                                                <ul class="collapsible">
+                                                    <li class="accordion-content paper active">
+                                                        <div class="collapsible-header content">
+                                                            <p class="heading">Singer Sewing Machine Showroom in Chennai</p><i
+                                                                class="material-icons right arrow">expand_more</i>
+                                                        </div>
+                                                        <div class="collapsible-body detail">
+                                                            <!-- <ol>
+                                                                <li><a href="#"></a></li>
+                                                            </ol> -->
+                                                            <ol>
+                                                                <li><a href="#">Merritt universal semi industrial sewing</a></li>
+                                                            
+                                                                <li><a href="#">Popular straight stitch sewing machine</a></li>
+                                                            
+                                                                <li><a href="#">Singer link deluxe straight stitch sewing machine</a></li>
+                                                            
+                                                                <li><a href="#">Singer silver girl straight stitch sewing machine</a></li>
+                                                            
+                                                                <li><a href="#">Singer star straight stitch sewing machine</a></li>
+                                                            
+                                                                <li><a href="#">tailor straight stitch sewing machine</a></li>
+                                                            </ol> 
+                                                        </div>
+                                                    </li>
+                                                    <li class="accordion-content paper">
+                                                        <div class="collapsible-header content">
+                                                            <p class="heading">Usha Sewing Machine Showroom in Chennai                                                            </p><i
+                                                                class="material-icons right arrow">expand_more</i>
+                                                        </div>
+                                                        <div class="collapsible-body detail">
+                                                            <p>Usha Sewing Machine Showroom in Chennai
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="accordion-content paper">
+                                                        <div class="collapsible-header content">
+                                                            <p class="heading">Juki Sewing Machine Price in Chennai
+                                                            </p><i
+                                                                class="material-icons right arrow">expand_more</i>
+                                                        </div>
+                                                        <div class="collapsible-body detail">
+                                                            <p>Juki Sewing Machine Price in Chennai
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="accordion-content paper">
+                                                        <div class="collapsible-header content">
+                                                            <p class="heading">Gemsy Sewing Machine dealers in Chennai                                                            </p><i
+                                                                class="material-icons right arrow">expand_more</i>
+                                                        </div>
+                                                        <div class="collapsible-body detail">
+                                                            <p>Gemsy Sewing Machine dealers in Chennai
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="accordion-content paper">
+                                                        <div class="collapsible-header content">
+                                                            <p class="heading">Jack Sewing Machine Dealers in Chennai                                                            </p><i
+                                                                class="material-icons right arrow">expand_more</i>
+                                                        </div>
+                                                        <div class="collapsible-body detail">
+                                                            <p>Jack Sewing Machine Dealers in Chennai
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ##### END FAQ #####-->
+                        <!-- ##### NEWS EVENT #####-->
+                        <!-- <section class="space-top-short" id="news">
+                            <div class="root">
+                                <div class="carousel">
+                                    <div class="slick-carousel" id="news_carousel">
+                                        <div>
+                                            <div class="item">
+                                                <div class="news-card">
+                                                    <figure><img
+                                                            src="https://res.cloudinary.com/walden-global-services/image/upload/v1544584529/dandelion/1.jpg"
+                                                            alt="thumb"></figure>
+                                                    <div class="desc">
+                                                        <div class="text">
+                                                            <p class="type caption">news</p>
+                                                            <p>Sed imperdiet enim ligula, vitae viverra justo porta vel.
+                                                                Duis eget felis bibendum, pretium mi sed, placerat ante.
+                                                            </p>
+                                                        </div><a class="btn btn-small btn-flat waves-effect">read
+                                                            more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="item">
+                                                <div class="news-card">
+                                                    <figure><img
+                                                            src="https://res.cloudinary.com/walden-global-services/image/upload/v1544584529/dandelion/6.jpg"
+                                                            alt="thumb"></figure>
+                                                    <div class="desc">
+                                                        <div class="text">
+                                                            <p class="type caption">news</p>
+                                                            <p>Sed imperdiet enim ligula, vitae viverra justo porta vel.
+                                                                Duis eget felis bibendum, pretium mi sed, placerat ante.
+                                                            </p>
+                                                        </div><a class="btn btn-small btn-flat waves-effect">read
+                                                            more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="item">
+                                                <div class="news-card">
+                                                    <figure><img
+                                                            src="https://res.cloudinary.com/walden-global-services/image/upload/v1544584529/dandelion/7.jpg"
+                                                            alt="thumb"></figure>
+                                                    <div class="desc">
+                                                        <div class="text">
+                                                            <p class="type caption">event</p>
+                                                            <p>Sed imperdiet enim ligula, vitae viverra justo porta vel.
+                                                                Duis eget felis bibendum, pretium mi sed, placerat ante.
+                                                            </p>
+                                                        </div><a class="btn btn-small btn-flat waves-effect">read
+                                                            more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="item">
+                                                <div class="news-card">
+                                                    <figure><img
+                                                            src="https://res.cloudinary.com/walden-global-services/image/upload/v1544584543/dandelion/10.jpg"
+                                                            alt="thumb"></figure>
+                                                    <div class="desc">
+                                                        <div class="text">
+                                                            <p class="type caption">news</p>
+                                                            <p>Sed imperdiet enim ligula, vitae viverra justo porta vel.
+                                                                Duis eget felis bibendum, pretium mi sed, placerat ante.
+                                                            </p>
+                                                        </div><a class="btn btn-small btn-flat waves-effect">read
+                                                            more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="item">
+                                                <div class="news-card">
+                                                    <figure><img
+                                                            src="https://res.cloudinary.com/walden-global-services/image/upload/v1544584543/dandelion/20.jpg"
+                                                            alt="thumb"></figure>
+                                                    <div class="desc">
+                                                        <div class="text">
+                                                            <p class="type caption">event</p>
+                                                            <p>Sed imperdiet enim ligula, vitae viverra justo porta vel.
+                                                                Duis eget felis bibendum, pretium mi sed, placerat ante.
+                                                            </p>
+                                                        </div><a class="btn btn-small btn-flat waves-effect">read
+                                                            more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="item">
+                                                <div class="news-card">
+                                                    <figure><img
+                                                            src="https://res.cloudinary.com/walden-global-services/image/upload/v1544584545/dandelion/17.jpg"
+                                                            alt="thumb"></figure>
+                                                    <div class="desc">
+                                                        <div class="text">
+                                                            <p class="type caption">news</p>
+                                                            <p>Sed imperdiet enim ligula, vitae viverra justo porta vel.
+                                                                Duis eget felis bibendum, pretium mi sed, placerat ante.
+                                                            </p>
+                                                        </div><a class="btn btn-small btn-flat waves-effect">read
+                                                            more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section> -->
+                        <!-- ##### NEWS EVENT #####-->
+                    </main>
+                    <!-- ##### fOOTER #####-->
+                    <div id="footer">
+                        <div class="footer-deco">
+                            <div class="decoration">
+                                
+                                <div class="line-deco"><svg class="right-deco-before" width="389px" height="1468px"
+                                        viewBox="0 0 389 1468" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g transform="translate(-2171.000000, 0.000000)">
+                                            <g transform="translate(-950.000000, 0.000000)">
+                                                <g transform="translate(950.000000, 0.000000)">
+                                                    <path
+                                                        d="M2329.58044,-732.909805 L3294.66463,-608.836163 C3018.10652,-208.944402 2934.07929,71.8618948 3042.58292,233.582726 C3136.98689,374.288498 3255.13325,471.945016 3255.13325,636.668858 C3255.13325,820.179655 3107.51302,903.798038 3059.64228,1128.51906 C3028.9047,1272.81133 3063.63816,1429.66837 3163.84265,1599.0902 L2141.66463,1599.0902 L2329.58044,-732.909805 Z"
+                                                        transform="translate(2718.164626, 433.090195) rotate(179.000000) translate(-2718.164626, -433.090195) ">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg> <svg class="right-deco" width="389px" height="1468px" viewBox="0 0 389 1468"
+                                        version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g transform="translate(-2171.000000, 0.000000)">
+                                            <g transform="translate(-950.000000, 0.000000)">
+                                                <g transform="translate(950.000000, 0.000000)">
+                                                    <path
+                                                        d="M2329.58044,-732.909805 L3294.66463,-608.836163 C3018.10652,-208.944402 2934.07929,71.8618948 3042.58292,233.582726 C3136.98689,374.288498 3255.13325,471.945016 3255.13325,636.668858 C3255.13325,820.179655 3107.51302,903.798038 3059.64228,1128.51906 C3028.9047,1272.81133 3063.63816,1429.66837 3163.84265,1599.0902 L2141.66463,1599.0902 L2329.58044,-732.909805 Z"
+                                                        transform="translate(2718.164626, 433.090195) rotate(179.000000) translate(-2718.164626, -433.090195) ">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg></div>
+                            </div>
+                            <div class="action">
+                                <h4 class="use-text-title2">Looking For The Best?</h4><a
+                                    class="btn secondary btn-large waves-effect" href="#">contact-us</a>
+                            </div>
+                            <footer class="footer">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-3 pa-4">
+                                            <div class="logo"><img src="../assets/images/movie-logo.png" alt="logo">
+                                                <h6 class="title">VS</h6>
+                                            </div>
+                                            <p class="body-2 show-md-up text-center">&copy; vssewingmachine  2020</p>
+                                        </div>
+                                        <div class="col-md-6 py-0 ps-6 pe-0">
+                                            <ul class="show-sm-down collapsible">
+                                                <li class="accordion-content">
+                                                    <div class="collapsible-header">
+                                                        <h6 class="title mb-4">Company</h6><i
+                                                            class="material-icons right arrow">expand_more</i>
+                                                    </div>
+                                                    <div class="collapsible-body">
+                                                        <ul>
+                                                            <li><a href="#team">Team</a></li>
+                                                            <li><a href="#history">History</a></li>
+                                                            <li><a href="#contact-us">Contact us</a></li>
+                                                            <li><a href="#locations">Locations</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="accordion-content">
+                                                    <div class="collapsible-header">
+                                                        <h6 class="title mb-4">Resources</h6><i
+                                                            class="material-icons right arrow">expand_more</i>
+                                                    </div>
+                                                    <div class="collapsible-body">
+                                                        <ul>
+                                                            <li><a href="#resource">Resource</a></li>
+                                                            <li><a href="#resource-name">Resource name</a></li>
+                                                            <li><a href="#another-resource">Another resource</a></li>
+                                                            <li><a href="#final-resource">Final resource</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="accordion-content">
+                                                    <div class="collapsible-header">
+                                                        <h6 class="title mb-4">Legal</h6><i
+                                                            class="material-icons right arrow">expand_more</i>
+                                                    </div>
+                                                    <div class="collapsible-body">
+                                                        <ul>
+                                                            <li><a href="#privacy-policy">Privacy policy</a></li>
+                                                            <li><a href="#terms-of-use">Terms of use</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="row show-md-up justify-content-evenly">
+                                                <div class="col-sm-3 pa-4 px-md-0 site-map-item">
+                                                    <h6 class="title-nav mb-4">Company</h6>
+                                                    <ul>
+                                                        <li><a href="#team">Team</a></li>
+                                                        <li><a href="#history">History</a></li>
+                                                        <li><a href="#contact-us">Contact us</a></li>
+                                                        <li><a href="#locations">Locations</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-3 pa-4 px-md-0 site-map-item">
+                                                    <h6 class="title-nav mb-4">Resources</h6>
+                                                    <ul>
+                                                        <li><a href="#resource">Resource</a></li>
+                                                        <li><a href="#resource-name">Resource name</a></li>
+                                                        <li><a href="#another-resource">Another resource</a></li>
+                                                        <li><a href="#final-resource">Final resource</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-3 pa-4 px-md-0 site-map-item">
+                                                    <h6 class="title-nav mb-4">Legal</h6>
+                                                    <ul>
+                                                        <li><a href="#privacy-policy">Privacy policy</a></li>
+                                                        <li><a href="#terms-of-use">Terms of use</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 pe-4 ps-0">
+                                            <div class="socmed"><a class="btn-icon waves-effect"><span
+                                                        class="ion-social-facebook icon"></span></a> <a
+                                                    class="btn-icon waves-effect"><span
+                                                        class="ion-social-twitter icon"></span></a> <a
+                                                    class="btn-icon waves-effect"><span
+                                                        class="ion-social-instagram icon"></span></a> <a
+                                                    class="btn-icon waves-effect"><span
+                                                        class="ion-social-linkedin icon"></span></a></div>
+                                            
+                                        </div>
+                                    </div>
+                                    <p class="body-2 text-center show-sm-down">&copy; Alexstrap Movie 2020</p>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                    <!-- ##### END fOOTER #####-->
+                    <!-- ##### PAGE-NAV #####-->
+                    <div class="hidden-sm-down">
+                        <div class="page-nav" id="page_nav">
+                            <nav class="section-nav">
+                                <div class="scrollnav">
+                                    <ul>
+                                        <li style="top: 150px"><a class="tooltipped" href="#promotions"
+                                                data-position="left" data-tooltip="promotions"></a></li>
+                                        <li style="top: 120px"><a class="tooltipped" href="#featured"
+                                                data-position="left" data-tooltip="featured"></a></li>
+                                        <li style="top: 90px"><a class="tooltipped" href="#top" data-position="left"
+                                                data-tooltip="top categories"></a></li>
+                                        <li style="top: 60px"><a class="tooltipped" href="#all" data-position="left"
+                                                data-tooltip="all categories"></a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="scrollnav">
+                                <a class="btn-floating btn-large primary tooltipped waves-effect waves-light"
+                                    href="#home" data-position="left" data-tooltip="To Top">
+                                    <div class="icon material-icons">arrow_upward</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ##### END PAGE-NAV #####-->
+                    <!-- ##### NOTIFICATION #####-->
+                    <!-- <div class="hidden-sm-down">
+                        <div class="alert full alert-dismissible fade show notification" role="alert">
+                            <div class="wrapper">
+                                <div class="content">
+                                    <div class="action">Donec sit amet nulla sed arcu pulvinar ultricies commodo id
+                                        ligula</div><button class="btn btn-outlined waves-effect waves-light white"
+                                        type="button" data-dismiss="alert" aria-label="Close">Accept</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- ##### END NOTIFICATION #####-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts-->
+    
+    <script src="../assets/js/movie-bundle.min.js"></script>
+    <!-- <script src="../assets/js/agency-bundle.min.js"></script> -->
+    <script src="../../assets/js/side-right.js"></script>
+</body>
+
+</html>
