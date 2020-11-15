@@ -32,7 +32,7 @@ include_once('phplib/view.php');
                 {
                  $randChar=md5(rand()).".jpg";
                     move_uploaded_file($_FILES['fileImages']['tmp_name'][$i], "Upload/ProductImage/".$randChar) or die("opps multiple picture not uploaded");
-                           $query="INSERT INTO `balas_productimage`(`image_path`, `product_id`) VALUES ('".$randChar."','".$Product_Id."')";
+                           $query="INSERT INTO `vs_productimage`(`image_path`, `product_id`) VALUES ('".$randChar."','".$Product_Id."')";
                            if($con->query($query))
                            {
                             $count=$i+1;

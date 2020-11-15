@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(!isset($_SESSION['BalasAdmin']))
+if(!isset($_SESSION['vsAdmin']))
 {
     echo "<script>window.open('adminlogin.php?logout','_self');</script>";
 }
@@ -32,7 +32,6 @@ if(!isset($_SESSION['BalasAdmin']))
     <link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
     <link href='css/uploadify.css' rel='stylesheet'>
     <link href='css/animate.min.css' rel='stylesheet'>
-
     <!-- jQuery -->
     <script src="bower_components/jquery/jquery.min.js"></script>
 

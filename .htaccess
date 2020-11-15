@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^ashweembroiderysolution\.com\.sriannaividyalaya\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.ashweembroiderysolution\.com\.sriannaividyalaya\.com$
+RewriteRule ^/?$ "http\:\/\/ashweembroiderysolution\.com" [R=301,L]
+

@@ -1,0 +1,7 @@
+[25-Oct-2020 06:32:25 Asia/Kolkata] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/sriannai/ashweembroiderysolution.com/admin/phplib/db_config.php on line 3
+[25-Oct-2020 06:32:25 Asia/Kolkata] PHP Notice:  Trying to get property of non-object in /home/sriannai/ashweembroiderysolution.com/admin/phplib/db_config.php on line 8
+[25-Oct-2020 06:33:00 Asia/Kolkata] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/sriannai/ashweembroiderysolution.com/admin/phplib/db_config.php on line 3
+[25-Oct-2020 06:33:00 Asia/Kolkata] PHP Notice:  Trying to get property of non-object in /home/sriannai/ashweembroiderysolution.com/admin/phplib/db_config.php on line 8
+[25-Oct-2020 06:33:00 Asia/Kolkata] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/sriannai/ashweembroiderysolution.com/admin/phplib/controler.php on line 11
+[25-Oct-2020 06:33:00 Asia/Kolkata] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/sriannai/ashweembroiderysolution.com/admin/phplib/controler.php on line 11
+[25-Oct-2020 06:33:00 Asia/Kolkata] PHP Fatal error:  Call to a member function query() on boolean in /home/sriannai/ashweembroiderysolution.com/admin/phplib/controler.php on line 13

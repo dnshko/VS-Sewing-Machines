@@ -65,16 +65,15 @@ include_once('phplib/view.php');
                 <div id="myTabContent" class="tab-content">
                     <div class="tab-pane active" id="info">
                         <h3>Create Location
-                            <small>Add New Location Here</small>
                         </h3>
                        <form role="form" action="cod.php" enctype="multipart/form-data" method="post">
                         <div class="form-group">
                             <label for="exampleInputPassword1">Location Name </label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="South Dum Dum , Ultodanga , Shyambazer" name="txtLocation" value="">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="" name="txtLocation" value="">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Pin Code </label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="700080" name="txtPinCode" maxlength="6" minlength="6" value="">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="" name="txtPinCode" maxlength="6" minlength="6" value="">
                         </div>
                         <div class="form-group">
                         <button type='submit' name='btnCteateLocation' class='btn btn-default'>Create Location</button>
@@ -83,7 +82,6 @@ include_once('phplib/view.php');
                     </div>
                     <div class="tab-pane" id="custom">
                         <h3>Manage Location
-                            <small>View All Location Or Delete Location</small>
                         </h3>
                           <table class="table table-striped table-bordered bootstrap-datatable datatable responsive">
     <thead>

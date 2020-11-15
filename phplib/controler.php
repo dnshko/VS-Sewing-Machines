@@ -56,8 +56,19 @@ function RegisterNewUser($customer_email,$customer_name,$customer_number,$passwo
 				  <button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
 				  <strong>Oh snap!</strong> Email Already Exist. <a href='forgot.php'>Forgot Password?</a>
 				</div>
+				
 
 				";
+				
+				  echo '<script type="text/JavaScript">  
+							Swal.fire({
+								icon: "error",
+								title: "Oops...",
+								text: "Email Already Exist",
+								footer: "<a href="forgot.php">Forgot Password?</a>"
+							  })
+							</script>' 
+						; 
 	}
 
 	
@@ -165,9 +176,9 @@ function placeorder($txtName,$txtEmail,$txtPhone,$txtAddress,$txtLandmark,$txtPi
 		session_start();
 		unset($_SESSION['uniqueSessionID']);
 
-		$to = 'contact.vskolkata@gmail.com';
+		$to = 'contact.ashweembroiderysolution.com';
 		$subject = 'New Order From Website-- Order Id-'.$OrderId;
-		$from = 'order@vskolkata.com';
+		$from = 'order@ashweembroiderysolution.com';
 		 
 		// To send HTML mail, the Content-type header must be set
 		$headers  = 'MIME-Version: 1.0' . "\r\n";
@@ -193,23 +204,22 @@ function placeorder($txtName,$txtEmail,$txtPhone,$txtAddress,$txtLandmark,$txtPi
 
 		// this section send mail to customer
 		$mailbody="Dear Customer(s),\n
-		Thank you for placing an order at www.vskolkata.com \n
+		Thank you for placing an order at www.ashweembroiderysolution.com \n
 		Your order no is ".$OrderId."\n
-		Please log in to www.vskolkata.com to track your order status.\n
+		Please log in to www.ashweembroiderysolution.com to track your order status.\n
 		Looking forward to serve you again.\n\n
 
 		Thanks & Regards,\n
-		vs Team\n
-		Kolkata\n
-		(+91) 91634 88628\n
+		ashweembroiderysolution.com Team\n
+		
 		Look Good! Do Good.'
 		";
 
-		$by ='From: orders@vskolkata.com'."\r\n".
-         'Reply-To: orders@vskolkata.com'."\r\n" .
+		$by ='From: orders@ashweembroiderysolution.com'."\r\n".
+         'Reply-To: orders@ashweembroiderysolution.com'."\r\n" .
           'X-Mailer: PHP/' . phpversion();
 
-		mail($txtEmail, "Thank you for placing an order at www.vskolkata.com", $mailbody, $by);
+		mail($txtEmail, "Thank you for placing an order at www.ashweembroiderysolution.com", $mailbody, $by);
 
 			echo "<script>window.open('payment_success.php?name=T3JkZXIgU3VjZXNz','_self');</script>";
 		}

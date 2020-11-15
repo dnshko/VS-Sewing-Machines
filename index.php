@@ -1,5 +1,6 @@
 <?php
 include_once('include/header.php');
+include_once('include/nav.php');
 include_once('phplib/view.php');
 if(!isset($_GET['name']))
 {
@@ -23,7 +24,7 @@ if(!isset($_GET['name']))
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <!-- <h1 class="use-text-title">VS</h1> -->
-                                                    <h2 class="use-text-title">VS Sewing Machines</h2>
+                                                    <h2 class="use-text-title">Ashweembroiderysolution</h2>
                                                     <p class="use-text-subtitle">Usha | Singer Merritt | Juki | Jack | Gemsy </p>
                                                 </div>
                                             </div>
@@ -370,7 +371,7 @@ if(!isset($_GET['name']))
                                     <div class="row spacing6">
                                         <div class="col-md-6 pa-6">
                                             <div class="title-main align-left">
-                                                <h4 class="primary-title">Best Sewing Machine Dealer in Chennai
+                                                <h4 class="primary-title">Best Sewing Machine Dealer in pondicherry 
                                                 </h4>
 
                                             </div>
@@ -386,7 +387,7 @@ if(!isset($_GET['name']))
                                                 <ul class="collapsible">
                                                     <li class="accordion-content paper active">
                                                         <div class="collapsible-header content">
-                                                            <p class="heading">Singer Sewing Machine Showroom in Chennai</p><i class="material-icons right arrow">expand_more</i>
+                                                            <p class="heading">Singer Sewing Machine Showroom in pondicherry </p><i class="material-icons right arrow">expand_more</i>
                                                         </div>
                                                         <div class="collapsible-body detail">
                                                             <!-- <ol>
@@ -409,38 +410,38 @@ if(!isset($_GET['name']))
                                                     </li>
                                                     <li class="accordion-content paper">
                                                         <div class="collapsible-header content">
-                                                            <p class="heading">Usha Sewing Machine Showroom in Chennai </p><i class="material-icons right arrow">expand_more</i>
+                                                            <p class="heading">Usha Sewing Machine Showroom in pondicherry  </p><i class="material-icons right arrow">expand_more</i>
                                                         </div>
                                                         <div class="collapsible-body detail">
-                                                            <p>Usha Sewing Machine Showroom in Chennai
+                                                            <p>Usha Sewing Machine Showroom in pondicherry 
                                                             </p>
                                                         </div>
                                                     </li>
                                                     <li class="accordion-content paper">
                                                         <div class="collapsible-header content">
-                                                            <p class="heading">Juki Sewing Machine Price in Chennai
+                                                            <p class="heading">Juki Sewing Machine Price in pondicherry 
                                                             </p><i class="material-icons right arrow">expand_more</i>
                                                         </div>
                                                         <div class="collapsible-body detail">
-                                                            <p>Juki Sewing Machine Price in Chennai
+                                                            <p>Juki Sewing Machine Price in pondicherry 
                                                             </p>
                                                         </div>
                                                     </li>
                                                     <li class="accordion-content paper">
                                                         <div class="collapsible-header content">
-                                                            <p class="heading">Gemsy Sewing Machine dealers in Chennai </p><i class="material-icons right arrow">expand_more</i>
+                                                            <p class="heading">Gemsy Sewing Machine dealers in pondicherry  </p><i class="material-icons right arrow">expand_more</i>
                                                         </div>
                                                         <div class="collapsible-body detail">
-                                                            <p>Gemsy Sewing Machine dealers in Chennai
+                                                            <p>Gemsy Sewing Machine dealers in pondicherry 
                                                             </p>
                                                         </div>
                                                     </li>
                                                     <li class="accordion-content paper">
                                                         <div class="collapsible-header content">
-                                                            <p class="heading">Jack Sewing Machine Dealers in Chennai </p><i class="material-icons right arrow">expand_more</i>
+                                                            <p class="heading">Jack Sewing Machine Dealers in pondicherry  </p><i class="material-icons right arrow">expand_more</i>
                                                         </div>
                                                         <div class="collapsible-body detail">
-                                                            <p>Jack Sewing Machine Dealers in Chennai
+                                                            <p>Jack Sewing Machine Dealers in pondicherry 
                                                             </p>
                                                         </div>
                                                     </li>

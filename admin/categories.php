@@ -90,14 +90,13 @@ include_once('phplib/view.php');
                 <div id="myTabContent" class="tab-content">
                     <div class="tab-pane active" id="info">
                         <h3>Create Category
-                            <small>Add New Category</small>
                         </h3>
 
 
                        <form role="form" action="categories.php" enctype="multipart/form-data" method="post">
 	                    <div class="form-group">
 	                        <label for="exampleInputPassword1">Categoriy Name</label>
-	                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Ring,Chain" name="txtCategoryName" value="<?php if(isset($_GET['EditID'])){ echo base64_decode($_GET['Name']);} ?>">
+	                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Category name " name="txtCategoryName" value="<?php if(isset($_GET['EditID'])){ echo base64_decode($_GET['Name']);} ?>">
 	                    </div>
 	                    <div class="form-group">
 	                        <label for="exampleInputFile">Banner Image</label>
@@ -128,7 +127,7 @@ include_once('phplib/view.php');
                     </div>
                     <div class="tab-pane" id="custom">
                         <h3>Manage Banner
-                            <small>View All Banners Or Delete Banners</small>
+                            
                         </h3>
                           <table class="table table-striped table-bordered bootstrap-datatable datatable responsive">
     <thead>

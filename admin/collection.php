@@ -75,17 +75,16 @@ include_once('phplib/view.php');
                 <div id="myTabContent" class="tab-content">
                     <div class="tab-pane active" id="info">
                         <h3>Create Collection
-                            <small>Upload New Collection Here</small>
                         </h3>
                        <form role="form" action="collection.php" enctype="multipart/form-data" method="post">
 	                    <div class="form-group">
 	                        <label for="exampleInputPassword1">Collection Name</label>
-	                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="WEDDING COLLECTION" name="txtCollection">
+	                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="COLLECTION NAME" name="txtCollection">
 	                    </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Collection Description</label>
                             <!--input type="text" class="form-control" id="exampleInputPassword1" placeholder="WEDDING COLLECTION" name="txtCollection"-->
-                            <textarea class="form-control" name="txtDescription" placeholder="Set in 24 Kt Yellow Gold (2.32 gms) with Diamonds (0.14 Ct, IJ-SI) Certified by SGL" rows="3"></textarea>
+                            <textarea class="form-control" name="txtDescription" placeholder="" rows="3"></textarea>
                         </div>
 	                    <div class="form-group">
 	                        <label for="exampleInputFile">Collection Banner</label>
@@ -101,7 +100,6 @@ include_once('phplib/view.php');
                     </div>
                     <div class="tab-pane" id="custom">
                         <h3>Manage Collections
-                            <small>View All Collection Or Delete Collections</small>
                         </h3>
                           <table class="table table-striped table-bordered bootstrap-datatable datatable responsive">
     <thead>

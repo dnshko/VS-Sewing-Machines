@@ -34,10 +34,10 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-md-3 pa-4">
-                                            <div class="logo"><img src="assets/images/movie-logo.png" alt="logo">
-                                                <h6 class="title">VS</h6>
+                                            <div class="logo"><img src="assets/images/logo.png" alt="logo">
+                                                <!-- <h6 class="title">VS</h6> -->
                                             </div>
-                                            <p class="body-2 show-md-up text-center">&copy; vssewingmachine 2020</p>
+                                            <p class="body-2 show-md-up text-center">&copy; Ashweembroiderysolution 2020</p>
                                         </div>
                                         <div class="col-md-6 py-0 ps-6 pe-0">
                                             <ul class="show-sm-down collapsible">
@@ -89,7 +89,7 @@
                                                         <li><a href="#locations">Locations</a></li>
                                                     </ul>
                                                 </div>
-                                                <div class="col-sm-3 pa-4 px-md-0 site-map-item">
+                                                <!-- <div class="col-sm-3 pa-4 px-md-0 site-map-item">
                                                     <h6 class="title-nav mb-4">Resources</h6>
                                                     <ul>
                                                         <li><a href="#resource">Resource</a></li>
@@ -97,7 +97,7 @@
                                                         <li><a href="#another-resource">Another resource</a></li>
                                                         <li><a href="#final-resource">Final resource</a></li>
                                                     </ul>
-                                                </div>
+                                                </div> -->
                                                 <div class="col-sm-3 pa-4 px-md-0 site-map-item">
                                                     <h6 class="title-nav mb-4">Legal</h6>
                                                     <ul>
@@ -116,7 +116,7 @@
 
                                         </div>
                                     </div>
-                                    <p class="body-2 text-center show-sm-down">&copy; vssewingmachine 2020</p>
+                                    <p class="body-2 text-center show-sm-down">&copy; Ashweembroiderysolution 2020</p>
                                 </div>
                             </footer>
                         </div>
@@ -159,6 +159,22 @@
 
     <script src="assets/js/movie-bundle.min.js"></script>
     <script src="assets/js/side-right.js"></script>
+    <script src="assets/js/sweetalert2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>
 </body>
 
 </html>

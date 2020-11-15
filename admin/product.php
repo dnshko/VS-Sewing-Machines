@@ -194,12 +194,11 @@ include_once('phplib/view.php');
                 <div id="myTabContent" class="tab-content">
                     <div class="tab-pane active" id="info">
                         <h3>Create Product
-                            <small>Create New Product Here</small>
                         </h3>
                        <form role="form" action="product.php" enctype="multipart/form-data" method="post">
                         <div class="form-group">
                             <label for="exampleInputPassword1">Product Name </label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Maang Tikka" name="txtProductName" value="<?php if(isset($_GET['EditID'])) {echo $EditDetails['product_name'];} ?>">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="" name="txtProductName" value="<?php if(isset($_GET['EditID'])) {echo $EditDetails['product_name'];} ?>">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Categories </label>
@@ -218,7 +217,7 @@ include_once('phplib/view.php');
 
                         <div class="form-group">
                             <label for="exampleInputFile">Product Description </label>
-                            <textarea class="form-control"  placeholder="Beautiful Mini Chand Kundan Maangtika With Pearls For Wedding And Sangeet Functions Indian Traditional Ethnic Wear" name="txtProductDescription" rows="5"><?php if(isset($_GET['EditID'])) {echo $EditDetails['description'];} ?></textarea>
+                            <textarea class="form-control"  placeholder="" name="txtProductDescription" rows="5"><?php if(isset($_GET['EditID'])) {echo $EditDetails['description'];} ?></textarea>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputFile">Product Image </label>
@@ -275,7 +274,6 @@ include_once('phplib/view.php');
                     </div>
                     <div class="tab-pane" id="custom">
                         <h3>Manage Product
-                            <small>View All Products Or Delete Products</small>
                         </h3>
                           <table class="table table-striped table-bordered bootstrap-datatable datatable responsive">
     <thead>

@@ -1,6 +1,9 @@
 <?php
- $con = mysqli_connect('localhost','root','','db_vs');
- 
+//local
+$con = mysqli_connect('localhost','root','','sriannai_vs');
+
+ //server
+//   $con = mysqli_connect('localhost','sriannai_viki','Vikisanbad@@22','sriannai_vs');
 
  if($con->connect_error)
  {

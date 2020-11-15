@@ -35,7 +35,7 @@
                                     class="glyphicon glyphicon-qrcode"></i><span> Account Settings</span></a></li>
                        
                     </ul>
-                    <label id="for-is-ajax" for="is-ajax"><input id="is-ajax" type="checkbox" > Ajax on menu</label>
+                    <label id="for-is-ajax" for="is-ajax" hidden><input id="is-ajax" type="checkbox" checked=checked > Ajax on menu</label>
                 </div>
             </div>
         </div>

@@ -26,7 +26,7 @@ else
             <a href="dashboard.php">Home</a>
         </li>
         <li>
-            <a href="pendingorder.php"><strong>#ORDERBALAS<?php echo base64_decode($_GET['orderid']); ?></strong> Order</a>
+            <a href="pendingorder.php"><strong>#ORDERvs<?php echo base64_decode($_GET['orderid']); ?></strong> Order</a>
         </li>
     </ul>
 </div>
@@ -35,7 +35,7 @@ else
     <div class="box col-md-12">
         <div class="box-inner homepage-box">
             <div class="box-header well">
-                <h2><i class="glyphicon glyphicon-th"></i> Order For <strong>#ORDERBALAS<?php echo base64_decode($_GET['orderid']); ?></strong></h2>
+                <h2><i class="glyphicon glyphicon-th"></i> Order For <strong>#ORDERvs<?php echo base64_decode($_GET['orderid']); ?></strong></h2>
 
                 <div class="box-icon">
                     <a href="#" class="btn btn-setting btn-round btn-default"><i
@@ -48,7 +48,7 @@ else
             </div>
             <div class="box-content">
                 <ul class="nav nav-tabs" id="myTab">
-                    <li class="active"><a href="#info"><strong>#ORDERBALAS<?php echo base64_decode($_GET['orderid']); ?></strong></a></li>
+                    <li class="active"><a href="#info"><strong>#ORDERvs<?php echo base64_decode($_GET['orderid']); ?></strong></a></li>
                 </ul>
 
                 <div id="myTabContent" class="tab-content">

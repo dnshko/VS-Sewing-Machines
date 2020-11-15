@@ -63,8 +63,9 @@ function viewcollection()
 		echo "<p align='center'>Coming Soon</p>";
 	}
 }
-
-
+					
+                                           
+                                    
 
 //this function show categories
 function viewcategories()
@@ -75,7 +76,8 @@ function viewcategories()
 
 	if ($result->num_rows > 0) {
 		while($row = $result->fetch_assoc()) {
-			echo "<li><a href='products.php?type=".base64_encode($row['category_id'])."&name=".base64_encode($row['category_name'])."'>".$row['category_name']."</a></li>";
+			echo " <div class='item'><a class='simple-thumb waves-effect categories' href='products.php?type=".base64_encode($row['category_id'])."&name=".base64_encode($row['category_name'])."'><span
+			class='text'>".$row['category_name']." </span></a></div>";
 		}
 	}
 	else
