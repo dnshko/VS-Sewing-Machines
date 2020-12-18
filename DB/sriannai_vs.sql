@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.3
+-- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 18, 2020 at 01:28 PM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.2.34
+-- Generation Time: Dec 18, 2020 at 08:50 PM
+-- Server version: 10.4.10-MariaDB
+-- PHP Version: 7.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -18,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_vs`
+-- Database: `sriannai_vs`
 --
 
 -- --------------------------------------------------------
@@ -116,7 +117,7 @@ CREATE TABLE `front_banner` (
 --
 
 INSERT INTO `front_banner` (`banner_id`, `url`, `image`) VALUES
-(1, 'home', '');
+(9, 'http://localhost/ashweembroiderysolution.com/singleproduct.php?id=MQ==&name=cHJvZHVjdF9uYW1lCQ==', '9b31a4869b80812ad69c731cb7aa5c99.jpg');
 
 -- --------------------------------------------------------
 
@@ -137,7 +138,8 @@ CREATE TABLE `product_category` (
 INSERT INTO `product_category` (`record_id`, `product_id`, `category_id`) VALUES
 (296, 1, 1),
 (297, 154, 2),
-(298, 155, 5);
+(298, 155, 5),
+(299, 156, 1);
 
 -- --------------------------------------------------------
 
@@ -173,7 +175,8 @@ CREATE TABLE `product_review` (
 --
 
 INSERT INTO `product_review` (`review_id`, `product_id`, `review_by(email)`, `review_by(name)`, `title`, `details`, `rate`, `publish`) VALUES
-(2, 14, 'prasun@php.net', 'Prasun Pal', 'Nice Product', 'This Product Is Very Good.', 5, 0);
+(2, 14, 'prasun@php.net', 'Prasun Pal', 'Nice Product', 'This Product Is Very Good.', 5, 0),
+(3, 1, 'test@gmail.com', 'dinesh', 'test dinesh nice da', 'test by dinesh', 5, 0);
 
 -- --------------------------------------------------------
 
@@ -230,7 +233,12 @@ INSERT INTO `vs_cart` (`Cart_ID`, `User_ID`, `product_id`, `product_price`, `qty
 (72, '197422002358ea0a9228e701.91166076', 55, 288, 1, 'pending'),
 (73, '1080412114590df073a01114.81558661', 108, 315, 10, 'pending'),
 (74, '925696934593263dc8f11b8.08014137', 151, 2160, 2, 'pending'),
-(75, '2089831850595229345073c0.58675917', 115, 234, 1, 'pending');
+(75, '2089831850595229345073c0.58675917', 115, 234, 1, 'pending'),
+(77, '10464547825fae1d7a2e16e1.19918991', 1, 0, 1, 'pending'),
+(78, '10464547825fae1d7a2e16e1.19918991', 155, 98, 1, 'pending'),
+(79, '20761163465fae35431385d4.39977920', 1, 0, 4, 'pending'),
+(80, '14284318485fdd019f863798.60355108', 156, 10, 1, 'pending'),
+(81, '19050470345fdd06072835b6.85591354', 154, 6, 1, 'pending');
 
 -- --------------------------------------------------------
 
@@ -289,7 +297,11 @@ INSERT INTO `vs_order` (`order_id`, `cart_id`, `order_by`, `email`, `phone`, `ad
 (25, '188813349658bda299564f75.58350315', 'Annopurna Sen', 'anr.365@gmail.com', '9830563985', '165 K B S Road, New Town. Kolkata 136', '', '700136', 'West Bengal', 900, 0, '2017-03-06', '23:28:00', 'Cash On Delivery', 1, 'Pending'),
 (51, '32158280158c8027bb12386.88446589', 'Piyali Basu', 'piyalibasu70@gmail.com', '9830728668', 'ganguly bagan, kolkata-84', 'ganguly bagan bus stand ', '700084', 'West Bengal', 234, 50, '14-03-2017', '20:20:00', 'Online', 1, 'Pending'),
 (53, '177111682658c8dc0b9351b0.26554186', 'Annesha Roy', 'info2programmer@gmail.com', '9547763998', 'Demo', '', '700052', 'West Bengal', 1, 0, '15-03-2017', '11:51:00', 'Online', 1, 'Pending'),
-(54, '47535316358d60e6a864b12.80778907', 'hj', 'hyujyu', 'ujuj', 'kjnoijoi', 'p]-o', '789456', 'Andaman and Nicobar', 450, 50, '25-03-2017', '12:25:00', 'Online', 0, 'Pending');
+(54, '47535316358d60e6a864b12.80778907', 'hj', 'hyujyu', 'ujuj', 'kjnoijoi', 'p]-o', '789456', 'Andaman and Nicobar', 450, 50, '25-03-2017', '12:25:00', 'Online', 0, 'Pending'),
+(55, '10464547825fae1d7a2e16e1.19918991', 'dinesh', 'test@gmail.com', '1234567687', 'ko', 'housing board', '626124', 'Tamil Nadu', 98, 50, '2020-11-13', '12:01:00', 'Cash On Delivery', 1, 'Delivered'),
+(56, '14284318485fdd019f863798.60355108', 'test', 'dnshko@gmail.com', '1234567890', 'ojwdopwwq', 'qwrqw', '626124', 'Tamil Nadu', 10, 50, '2020-12-19', '00:54:00', 'Cash On Delivery', 1, 'Confirmed'),
+(57, '19050470345fdd06072835b6.85591354', 'lknbibwibd', 'sndi@odoew.coei', '1234567890', 'fewifhph', 'oihdi', '626124', 'Tamil Nadu', 6, 50, '19-12-2020', '01:12:00', 'Online', 0, 'Pending'),
+(58, '19050470345fdd06072835b6.85591354', 'lknbibwibd', 'sndi@odoew.coei', '1234567890', 'fewifhph', 'oihdi', '626124', 'Tamil Nadu', 6, 50, '19-12-2020', '01:13:00', 'Online', 0, 'Pending');
 
 -- --------------------------------------------------------
 
@@ -315,7 +327,8 @@ CREATE TABLE `vs_product` (
 INSERT INTO `vs_product` (`product_id`, `product_name`, `description`, `image`, `price`, `selling`, `special`, `SKU`) VALUES
 (1, 'product_name	', 'description	', 'img', 0, 0, 1, 'SKU'),
 (154, 'demo', 'asd', 'ae149c31f006e8da69cc3793bb5a0b39.jpg', 96, 6, 1, '66'),
-(155, 'ko', 'mmm', '9446c939db66b1e276eea746277ca742.jpg', 98, 98, 0, '89n');
+(155, 'ko', 'mmm', '9446c939db66b1e276eea746277ca742.jpg', 98, 98, 0, '89n'),
+(156, 'new test', 'new test', '4c0113226fb3815c4bceffd3b31f76f0.jpg', 10, 10, 1, '10');
 
 -- --------------------------------------------------------
 
@@ -334,7 +347,13 @@ CREATE TABLE `vs_productimage` (
 --
 
 INSERT INTO `vs_productimage` (`image_id`, `product_id`, `image_path`) VALUES
-(1, 1, 'path');
+(1, 1, 'path'),
+(302, 156, 'ef5f74afc7fc4273dfd5cb9a98232620.jpg'),
+(303, 156, 'd698d03ec6217fbf0d1371c0860b41be.jpg'),
+(304, 156, '4364c025937948937683005ab21dbc36.jpg'),
+(305, 156, 'c77df2dddcbb05d1531266466611d3df.jpg'),
+(306, 156, '6f6508bd4b3756603598650ed0ba3095.jpg'),
+(307, 156, '25a0a4b2f614c1daf99f1e1691602210.jpg');
 
 -- --------------------------------------------------------
 
@@ -366,7 +385,11 @@ INSERT INTO `vs_user` (`customer_id`, `customer_email`, `customer_name`, `custom
 (11, 'pallabi.mazumder.90@gmail.com', 'Pallabi Basu', '8100841382', 'd6dc56c840eb849a69c854b139c55011', NULL, NULL),
 (12, 'romaroy.smart@gmail.com', 'Roma Roy', '9836808231', '2b01203e83a71e724533e861c8373705', NULL, NULL),
 (13, 'deblinadas.89@gmail.com', 'Deblina Das', '8197552532', '29f13b5a475e90cb52338ef1f3c7f282', 'C105, Golden Nest Apartment, JCRLAYOUT, 2ndCross, Panathur Main Road,', ''),
-(14, 'moumitamitra945@gmail.com', 'moumita mitra', '9804806521', '3063cf1ca25e85ded38bcc0064b77f51', NULL, NULL);
+(14, 'moumitamitra945@gmail.com', 'moumita mitra', '9804806521', '3063cf1ca25e85ded38bcc0064b77f51', NULL, NULL),
+(15, 'test@gmail.com', 'dinesh', '1234567890', 'ed73f6b46391b95e1d03c6818a73b8b9', NULL, NULL),
+(16, 'test1@gmail.com', 'test1@gmail.com', '1234567890', '245cf079454dc9a3374a7c076de247cc', NULL, NULL),
+(17, 'dineshko@gmail.com', 'DINESH', '1234567890', '3b3bc40bd97ad3492fa1281be4d453ad', NULL, NULL),
+(21, 'a@b.c', 'abca', '1234567890', 'ed73f6b46391b95e1d03c6818a73b8b9', NULL, NULL);
 
 --
 -- Indexes for dumped tables
@@ -488,13 +511,13 @@ ALTER TABLE `collection`
 -- AUTO_INCREMENT for table `front_banner`
 --
 ALTER TABLE `front_banner`
-  MODIFY `banner_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `banner_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `product_category`
 --
 ALTER TABLE `product_category`
-  MODIFY `record_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=299;
+  MODIFY `record_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=300;
 
 --
 -- AUTO_INCREMENT for table `product_collection`
@@ -506,13 +529,13 @@ ALTER TABLE `product_collection`
 -- AUTO_INCREMENT for table `product_review`
 --
 ALTER TABLE `product_review`
-  MODIFY `review_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `review_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `vs_cart`
 --
 ALTER TABLE `vs_cart`
-  MODIFY `Cart_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
+  MODIFY `Cart_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=82;
 
 --
 -- AUTO_INCREMENT for table `vs_newsletter`
@@ -524,25 +547,25 @@ ALTER TABLE `vs_newsletter`
 -- AUTO_INCREMENT for table `vs_order`
 --
 ALTER TABLE `vs_order`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
 -- AUTO_INCREMENT for table `vs_product`
 --
 ALTER TABLE `vs_product`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=156;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=157;
 
 --
 -- AUTO_INCREMENT for table `vs_productimage`
 --
 ALTER TABLE `vs_productimage`
-  MODIFY `image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=302;
+  MODIFY `image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=308;
 
 --
 -- AUTO_INCREMENT for table `vs_user`
 --
 ALTER TABLE `vs_user`
-  MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -2,15 +2,14 @@
 <?php
 session_start();
 include_once('phplib/view.php');
-include_once('phplib/controler.php');
+// include_once('phplib/controler.php');
 $product_details=getproductdetailsbyid(base64_decode($_GET['id']));
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="CC Dev">
+    <meta name="description" content="Ashweembroiderysolution">
     <meta name="viewport" content="minimum-scale=1,initial-scale=1,width=device-width,shrink-to-fit=no">
     <!-- Favicon-->
     <link rel="shortcut icon" href="assets/favicons/favicon.ico">
@@ -28,24 +27,25 @@ $product_details=getproductdetailsbyid(base64_decode($_GET['id']));
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
     <!-- Twitter-->
-    <meta property="twitter:site" content="CC Dev">
-    <meta property="twitter:domain" content="CC Dev">
-    <meta property="twitter:creator" content="CC Dev">
+    <meta property="twitter:site" content="Ashweembroiderysolution">
+    <meta property="twitter:domain" content="Ashweembroiderysolution">
+    <meta property="twitter:creator" content="Ashweembroiderysolution">
     <meta property="twitter:card" content="summary">
     <meta property="twitter:image:src" content="assets/images/logo.png">
     <meta property="og:url" content="">
-    <meta property="og:title" content="CC Dev">
-    <meta property="og:description" content="HTML5 Bootstrap Landing Page Template">
+    <meta property="og:title" content="Ashweembroiderysolution">
+    <meta property="og:description" content="Ashweembroiderysolution">
     <meta name="twitter:site" content="CC Dev">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="assets/images/logo.png">
     <meta property="og:image" content="assets/images/logo.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <title>Home Page</title>
+    <title>Ashweembroiderysolution</title>
     <!-- Styles-->
     <link href="assets/css/side-right.css" rel="stylesheet" type="text/css" media="all">
     <link href="assets/css/movie-bundle.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/css/sweetalert2.min.css" rel="stylesheet" type="text/css" media="all">
     <!--new-->
     
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
@@ -55,11 +55,21 @@ $product_details=getproductdetailsbyid(base64_decode($_GET['id']));
 <script src="js/jquery-1.11.1.min.js"></script>
 <link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script src='js/okzoom.js'></script>
+
+
+<!-- new -->
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
+<!-- //font-awesome icons -->
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
 <!-- //js -->
-<script src='js/okzoom.js'></script>
+ <script src='js/okzoom.js'></script>
   <script>
     $(function(){
       $('#example').okzoom({
@@ -136,7 +146,11 @@ $product_details=getproductdetailsbyid(base64_decode($_GET['id']));
 
 
 <style type="text/css">
-	
+	body {
+		background-image: url(images/bg2.png);
+		background-size: 100%;
+		background-repeat: repeat-y;
+	}
 	.inner {
 		background-color: #fff;
 		-webkit-box-shadow: 0px 0px 31px 1px rgba(0,0,0,0.75);
@@ -155,6 +169,8 @@ $product_details=getproductdetailsbyid(base64_decode($_GET['id']));
 		margin: 0px 60px;
 	}
 </style>
+
+
 
 </head>
 
@@ -187,7 +203,7 @@ $product_details=getproductdetailsbyid(base64_decode($_GET['id']));
                         </div>
                     </div>
                     <!-- ##### HEADER #####-->
-                    <header class="app-bar header fixed" id="header">
+                    <header class="app-bar header fixed" id="header" style="position: fixed;">
                         <div class="container fixed-width-lg-up">
                             <div class="header-content">
                                 <nav class="nav-logo nav-menu"><button class="mobile-menu btn-icon waves-effect hamburger hamburger--spin show-md-down" id="mobile_menu" type="button"><span class="hamburger-box"><span
@@ -267,11 +283,7 @@ $product_details=getproductdetailsbyid(base64_decode($_GET['id']));
 		<div class="">
 			<div  class="w3l_banner_nav_right_banner3" 
 			style="background:url(admin/Upload/Categories/<?php echo $category_details['category_image']; ?>) no-repeat 0px 0px;
-						background-size:cover;
-	                    background-size:cover;
-	                    -moz-background-size:cover;
-	                   -o-background-size:cover;
-	                   -ms-background-size:cover;">
+						">
 				
 			</div>
 			<div class="w3l_banner_nav_right_banner3_btm">

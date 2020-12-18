@@ -25,6 +25,7 @@ function RegisterNewUser($customer_email,$customer_name,$customer_number,$passwo
 					</div>
 
 					";
+					echo "<script>window.open('login.php','_self');</script>";
 				}
 			}
 			else

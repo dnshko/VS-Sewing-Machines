@@ -161,6 +161,10 @@
     <script src="assets/js/side-right.js"></script>
     <script src="assets/js/sweetalert2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script src='js/okzoom.js'></script>
+
 <script>
 $(document).ready(function(){
     $(".dropdown").hover(            

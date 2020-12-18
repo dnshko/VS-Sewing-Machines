@@ -115,7 +115,7 @@ function viewhomeproduct()
 											<strong>Product Code :</strong>".$row['SKU']."
 										</div>
 										<div class='snipcart-details top_brand_home_details'>
-											<a href='singleproduct.php?id=".base64_encode($row['product_id'])."&name=".base64_encode($row['product_name'])."' class='snipcart-details'>Add To Cart</a>
+											<a href='singleproduct.php?id=".base64_encode($row['product_id'])."&name=".base64_encode($row['product_name'])."' class='snipcart-details'>View</a>
 										</div>
 									</div>
 								</figure>
@@ -143,7 +143,7 @@ function viewhomeproduct()
 											<strong>Product Code :</strong>".$row['SKU']."
 										</div>
 										<div class='snipcart-details top_brand_home_details'>
-											<a href='singleproduct.php?id=".base64_encode($row['product_id'])."&name=".base64_encode($row['product_name'])."' class='snipcart-details'>Add To Cart</a>
+											<a href='singleproduct.php?id=".base64_encode($row['product_id'])."&name=".base64_encode($row['product_name'])."' class='snipcart-details'>View</a>
 										</div>
 									</div>
 								</figure>
